@@ -12,6 +12,8 @@
 
 A more opinionated, but barebones front end web3 template using some of my favorite technologies.
 
+SkeleKit-WagmiConnect is the lovechild of the 'create-skeleton-app' and the demo example provided by WalletConnect.
+
 This repository superceeds my previous frontend learning efforts with Sveltekit [here](https://github.com/Elliott-Green/skelekit-wagmiconnect)
 
    <img src="./skelekit-wagmiconnect.png" alt="Logo" >
@@ -76,6 +78,8 @@ pnpm run docker:clean
 ## Vercel .envs
 
 Using vercel you can specifiy if envs are inserted into the UI or through a .env.
+
+`VITE_PROJECT_ID` should be set to a [wallet-connect dapp ID](https://cloud.walletconnect.com/) to become available through its 'dapp explorer', else just set it to 1.
 
 ## Audit
 
@@ -142,4 +146,3 @@ Project Link: [https://github.com/Elliott-Green/skelekit-wagmiconnect](https://g
 [issues-url]: https://github.com/Elliott-Green/skelekit-wagmiconnect/issues
 [license-shield]: https://img.shields.io/github/license/Elliott-Green/skelekit-wagmiconnect.svg?style=for-the-badge
 [license-url]: https://github.com/Elliott-Green/skelekit-wagmiconnect/blob/main/LICENCE
-[product-screenshot]: ./skelekit-wagmiconnect.png
