@@ -14,7 +14,7 @@ A more opinionated, but barebones front end web3 template using some of my favor
 
 SkeleKit-WagmiConnect is the lovechild of the 'create-skeleton-app' and the demo example provided by WalletConnect.
 
-This repository superceeds my previous frontend learning efforts with Sveltekit [here](https://github.com/Elliott-Green/skelekit-wagmiconnect)
+This repository superceeds my previous frontend learning efforts with Sveltekit [here](https://github.com/Elliott-Green/SveltekitXSkeletonXEthers)
 
    <img src="./skelekit-wagmiconnect.png" alt="Logo" >
 
