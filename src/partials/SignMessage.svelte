@@ -1,44 +1,43 @@
+<!-- THIS FILE CAN BE REMOVED, IT SERVES ONLY TO DEMO BEST PRACTICES -->
 <script lang="ts">
-	import { signMessage } from '@wagmi/core'
-	import toast from 'svelte-french-toast'
-	import Card from '../components/Card.svelte'
-	import Button from '../components/Button.svelte'
-	import { wagmiConfig } from '$lib/web3modal'
+	import { signMessage } from '@wagmi/core';
+	import toast from 'svelte-french-toast';
+	import { wagmiConfig } from '$lib/web3modal';
 
-	let signature: string | undefined
-	let label: string = 'Sign Message'
+	let signature: string | undefined;
+	let label: string = 'Sign Message';
 
 	async function handleSign() {
-		label = 'Signing...'
-		signature = '_'
+		label = 'Signing...';
+		signature = '_';
 
 		try {
 			const _signature = await signMessage(wagmiConfig, {
-				message: 'WalletConnect message',
-			})
+				message: 'WalletConnect message'
+			});
 
 			//@ts-expect-error Wagmi Type bug
 			if (_signature !== 'null') {
-				signature = _signature
-				toast.success('Message signed successfully')
+				signature = _signature;
+				toast.success('Message signed successfully');
 			} else {
-				toast.error('The signature was rejected')
-				signature = '_ personal_sign'
+				toast.error('The signature was rejected');
+				signature = '_ personal_sign';
 			}
 		} catch (error) {
-			toast.error((error as Error).message)
+			toast.error((error as Error).message);
 		} finally {
-			label = 'Sign Message'
+			label = 'Sign Message';
 		}
 	}
 </script>
 
-<Card>
+<div class="card">
 	<div>
 		{signature ?? '_ personal_sign'}
-		<Button on:click={handleSign}>{label}</Button>
+		<button class="btn variant-primary" on:click={handleSign}>{label}</button>
 	</div>
-</Card>
+</div>
 
 <style>
 	div {

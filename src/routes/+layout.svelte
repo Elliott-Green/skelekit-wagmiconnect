@@ -1,76 +1,53 @@
-<script>
-	import '../css/global.css'
-	import '../lib/web3modal'
+<!-- 
+	YOU CAN DELETE EVERYTHING IN THIS PAGE EXCEPT 
+	-	<w3m-button>
+	IT IS RECOMMENDED YOU UTILISE THE NAVS/APPSHELLS FROM SKELETON TO SLOT INTO
+-->
+<script lang="ts">
+	import '../lib/web3modal';
+	import '../app.postcss';
+	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+
+	// Floating UI for Popups
+	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
+	import { storePopup } from '@skeletonlabs/skeleton';
+	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
-<div class="container">
-	<a
-		href="https://walletconnect.com/"
-		target="_blank"
-		rel="noreferrer nofollow"
-	>
-		<img src="walletconnect.svg" alt="WalletConnect" />
-	</a>
-	<span class="btn">
-		<w3m-button />
-		<a
-			href="https://github.com/WalletConnect/web-examples/tree/main/dapps/web3modal/svelte"
-			target="_blank"
-			rel="noreferrer nofollow"
-		>
-			<img src="github.svg" alt="GitHub" />
-		</a>
-	</span>
-</div>
-<slot />
-
-<style>
-	.container {
-		padding: 20px;
-		height: 90px;
-		text-align: center;
-
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		gap: 100px;
-
-		margin-bottom: 40px;
-
-		font-size: 34px;
-		font-weight: 600;
-	}
-
-	.container img {
-		width: 80px;
-		height: auto;
-	}
-
-	.btn img {
-		width: 40px;
-		height: auto;
-	}
-	.btn a {
-		transition: all 0.2s ease;
-	}
-
-	.btn a:hover {
-		transform: scale(1.1);
-	}
-
-	.btn {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 30px;
-	}
-
-	@media (max-width: 540px) {
-		.container {
-			gap: 0;
-		}
-		.btn {
-			gap: 10px;
-		}
-	}
-</style>
+<AppShell>
+	<svelte:fragment slot="header">
+		<AppBar>
+			<svelte:fragment slot="lead">
+				<strong class="text-xl uppercase">SkeleKit-WagmiConnect</strong>
+			</svelte:fragment>
+			<svelte:fragment slot="trail">
+				<a
+					class="btn btn-sm variant-ghost-surface"
+					href="https://discord.gg/EXqV7W8MtY"
+					target="_blank"
+					rel="noreferrer"
+				>
+					Skeleton Discord
+				</a>
+				<a
+					class="btn btn-sm variant-ghost-surface"
+					href="https://twitter.com/SkeletonUI"
+					target="_blank"
+					rel="noreferrer"
+				>
+					Devs Twitter
+				</a>
+				<a
+					class="btn btn-sm variant-ghost-surface"
+					href="https://github.com/skeletonlabs/skeleton"
+					target="_blank"
+					rel="noreferrer"
+				>
+					GitHub
+				</a>
+				<w3m-button />
+			</svelte:fragment>
+		</AppBar>
+	</svelte:fragment>
+	<slot />
+</AppShell>

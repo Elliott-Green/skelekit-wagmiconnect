@@ -1,10 +1,10 @@
+<!-- THIS FILE CAN BE REMOVED, IT SERVES ONLY TO DEMO BEST PRACTICES -->
 <script lang="ts">
-	import { chainId, account } from '$lib/web3modal'
-	import Card from '../components/Card.svelte'
+	import { chainId, account } from '$lib/web3modal';
 </script>
 
 {#if $account.address}
-	<Card>
+	<div class="card">
 		<span>
 			<span id="title">Chain ID:</span>
 			{$chainId}
@@ -23,7 +23,7 @@
 				{$account.chain?.nativeCurrency.name}
 			</span>
 		{/if}
-	</Card>
+	</div>
 {/if}
 
 <style>
