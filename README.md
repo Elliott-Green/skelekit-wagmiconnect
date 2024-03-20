@@ -81,47 +81,13 @@ Using vercel you can specifiy if envs are inserted into the UI or through a .env
 
 `VITE_PROJECT_ID` should be set to a [wallet-connect dapp ID](https://cloud.walletconnect.com/) to become available through its 'dapp explorer', else just set it to 1.
 
-## Audit
+## Micro Audit
 
-One minor note to mention for the audit to date is this audit report about IP address. Users should be aware that using WalletConnect does actually call into their servers which records your users IP address, developers should be aware of this point.
+Users should be aware that using WalletConnect does actually call into their servers which records your users IP address, developers should be aware of this point.
 
 ```bash
 pnpm audit
-┌─────────────────────┬────────────────────────────────────────────────────────┐
-│ moderate            │ NPM IP package incorrectly identifies some private IP  │
-│                     │ addresses as public                                    │
-├─────────────────────┼────────────────────────────────────────────────────────┤
-│ Package             │ ip                                                     │
-├─────────────────────┼────────────────────────────────────────────────────────┤
-│ Vulnerable versions │ <1.1.9                                                 │
-├─────────────────────┼────────────────────────────────────────────────────────┤
-│ Patched versions    │ >=1.1.9                                                │
-├─────────────────────┼────────────────────────────────────────────────────────┤
-│ Paths               │ . > @wagmi/connectors@4.1.13 > @metamask/sdk@0.14.3 >  │
-│                     │ @metamask/sdk-install-modal-web@0.14.1 >               │
-│                     │ react-i18next@13.5.0 > react-native@0.73.3 >           │
-│                     │ @react-native-community/cli@12.3.2 >                   │
-│                     │ @react-native-community/cli-doctor@12.3.2 > ip@1.1.8   │
-│                     │                                                        │
-│                     │ . > @wagmi/connectors@4.1.13 > @metamask/sdk@0.14.3 >  │
-│                     │ @metamask/sdk-install-modal-web@0.14.1 >               │
-│                     │ react-i18next@13.5.0 > react-native@0.73.3 >           │
-│                     │ @react-native-community/cli@12.3.2 >                   │
-│                     │ @react-native-community/cli-hermes@12.3.2 > ip@1.1.8   │
-│                     │                                                        │
-│                     │ . > @wagmi/connectors@4.1.13 > @metamask/sdk@0.14.3 >  │
-│                     │ @react-native-async-storage/async-storage@1.21.0 >     │
-│                     │ react-native@0.73.3 >                                  │
-│                     │ @react-native-community/cli@12.3.2 >                   │
-│                     │ @react-native-community/cli-doctor@12.3.2 > ip@1.1.8   │
-│                     │                                                        │
-│                     │ ... Found 20 paths, run `pnpm why ip` for more         │
-│                     │ information                                            │
-├─────────────────────┼────────────────────────────────────────────────────────┤
-│ More info           │ https://github.com/advisories/GHSA-78xj-cgh5-2h22      │
-└─────────────────────┴────────────────────────────────────────────────────────┘
-1 vulnerabilities found
-Severity: 1 moderate
+No known vulnerabilities found
 ```
 
 ## Licence
