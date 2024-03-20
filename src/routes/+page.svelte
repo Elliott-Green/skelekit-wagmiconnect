@@ -87,7 +87,6 @@
 								Sveltekit Documentation
 							</a>
 						</div>
-			
 					</div>
 				</figure>
 

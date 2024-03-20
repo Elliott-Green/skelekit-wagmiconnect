@@ -8,7 +8,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# SvelteKit + WalletConnect + Wagmi + Skeleton(Tailwind)
+# Skelekit-WagmiConnect
 
 A more opinionated, but barebones front end web3 template using some of my favorite technologies.
 
