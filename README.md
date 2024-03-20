@@ -12,7 +12,9 @@
 
 A more opinionated, but barebones front end web3 template using some of my favorite technologies.
 
-This repository superceeds my previous frontend learning efforts with Sveltekit [here](https://github.com/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind)
+This repository superceeds my previous frontend learning efforts with Sveltekit [here](https://github.com/Elliott-Green/skelekit-wagmiconnect)
+
+   <img src="./skelekit-wagmiconnect.png" alt="Logo" >
 
 ## Virgins of the way
 
@@ -71,6 +73,10 @@ pnpm run docker:remove
 pnpm run docker:clean
 ```
 
+## Vercel .envs
+
+Using vercel you can specifiy if envs are inserted into the UI or through a .env.
+
 ## Audit
 
 One minor note to mention for the audit to date is this audit report about IP address. Users should be aware that using WalletConnect does actually call into their servers which records your users IP address, developers should be aware of this point.
@@ -122,15 +128,18 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 
 Elliott Green - [@cryptonines](https://twitter.com/cryptonines)
 
-Project Link: [https://github.com/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind](https://github.com/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind)
+Project Link: [https://github.com/Elliott-Green/skelekit-wagmiconnect](https://github.com/Elliott-Green/skelekit-wagmiconnect)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind.svg?style=for-the-badge
-[contributors-url]: https://github.com/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind.svg?style=for-the-badge
-[forks-url]: https://github.com/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind/network/members
-[stars-shield]: https://img.shields.io/github/stars/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind.svg?style=for-the-badge
-[stars-url]: https://github.com/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind
-[license-url]: https://github.com/Elliott-Green/SvelteKit-WalletConnect-Wagmi-Skeleton-Tailwind/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Elliott-Green/skelekit-wagmiconnect.svg?style=for-the-badge
+[contributors-url]: https://github.com/Elliott-Green/skelekit-wagmiconnect/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Elliott-Green/skelekit-wagmiconnect.svg?style=for-the-badge
+[forks-url]: https://github.com/Elliott-Green/skelekit-wagmiconnect/network/members
+[stars-shield]: https://img.shields.io/github/stars/Elliott-Green/skelekit-wagmiconnect.svg?style=for-the-badge
+[stars-url]: https://github.com/Elliott-Green/skelekit-wagmiconnect/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Elliott-Green/skelekit-wagmiconnect.svg?style=for-the-badge
+[issues-url]: https://github.com/Elliott-Green/skelekit-wagmiconnect/issues
+[license-shield]: https://img.shields.io/github/license/Elliott-Green/skelekit-wagmiconnect.svg?style=for-the-badge
+[license-url]: https://github.com/Elliott-Green/skelekit-wagmiconnect/blob/main/LICENCE
+[product-screenshot]: ./skelekit-wagmiconnect.png
