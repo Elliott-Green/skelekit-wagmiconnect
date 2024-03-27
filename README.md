@@ -18,9 +18,15 @@ This repository superceeds my previous frontend learning efforts with Sveltekit 
 
 <p align="center">
    <img src="./static/skelekit-wagmiconnect.png" alt="skelekit-wagmiconnect desktop" >
-   <img src="./static/skelekit-wagmiconnect-mobile.png" alt="skelekit-wagmiconnect mobile" width="280" >
-   <img src="./static/skelekit-wagmiconnect-mobile-network.png" alt="skelekit-wagmiconnect network"  width="280">
-   <img src="./static/skelekit-wagmiconnect-mobile-sign.png" alt="skelekit-wagmiconnect sign" width="280" >
+</p>
+
+<p align="center">
+   <img src="./static/skelekit-wagmiconnect-mobile.png" alt="skelekit-wagmiconnect mobile" width="230" >
+   <img src="./static/skelekit-wagmiconnect-mobile-network.png" alt="skelekit-wagmiconnect network"  width="230">
+   <img src="./static/skelekit-wagmiconnect-mobile-sign.png" alt="skelekit-wagmiconnect sign" width="230" >
+</p>
+<p align="center">
+   <img src="./static/skelekit-wagmiconnect-lighthouse.png" alt="skelekit-wagmiconnect desktop" >
 </p>
 
 ## Virgins of the way
@@ -90,6 +96,16 @@ pnpm run docker:clean
 Using vercel you can specifiy if envs are inserted into the UI or through a .env.
 
 `VITE_PROJECT_ID` should be set to a [wallet-connect dapp ID](https://cloud.walletconnect.com/) to become available through its 'dapp explorer', else just set it to 1.
+
+## Svelte-SEO
+
+This template comes equipped with Svelte-SEO to make your life easier.
+
+Just override on `+page`'s that you want custom SEO for.
+
+```bash
+https://www.opengraph.xyz/url/https%3A%2F%2Fskelekit-wagmiconnect.vercel.app
+```
 
 ## Micro Audit
 
