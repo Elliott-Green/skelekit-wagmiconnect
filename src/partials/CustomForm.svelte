@@ -11,13 +11,11 @@
 
 <div class="container h-full justify-center items-center space-y-10 text-center flex flex-col">
 	<h2 class="h2">Add a Custom Wallet to Web3Modal.</h2>
-	<div class="">
-		<p>Try signing into a wallet to access:</p>
-		<div class="grid grid-cols-3 space-x-10">
-			<p><code class="code">/_personal_sign</code></p>
-			<p><code class="code">/_signTypeData_v4</code></p>
-			<p><code class="code">/_eth_sendTransaction</code></p>
-		</div>
+	<p>Try signing into a wallet to access:</p>
+	<div class="flex space-x-10">
+		<p><code class="code">/_personal_sign</code></p>
+		<p><code class="code">/_signTypeData_v4</code></p>
+		<p><code class="code">/_eth_sendTransaction</code></p>
 	</div>
 	<form
 		on:submit|preventDefault={handleSubmit}

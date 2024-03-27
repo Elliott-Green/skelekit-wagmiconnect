@@ -18,11 +18,11 @@
 	<svelte:fragment slot="header">
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">SkeleKit-WagmiConnect</strong>
+				<strong class="text-[12px] md:text-xl md:uppercase">SkeleKit-WagmiConnect</strong>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
 				<a
-					class="btn btn-sm variant-ghost-surface"
+					class="btn btn-sm variant-ghost-surface hidden md:block"
 					href="https://discord.gg/EXqV7W8MtY"
 					target="_blank"
 					rel="noreferrer"
@@ -30,7 +30,7 @@
 					Skeleton Discord
 				</a>
 				<a
-					class="btn btn-sm variant-ghost-surface"
+					class="btn btn-sm variant-ghost-surface hidden md:block"
 					href="https://twitter.com/cryptonines"
 					target="_blank"
 					rel="noreferrer"
@@ -38,14 +38,14 @@
 					Twitter
 				</a>
 				<a
-					class="btn btn-sm variant-ghost-surface"
+					class="btn btn-sm variant-ghost-surface hidden md:block"
 					href="https://github.com/Elliott-Green/skelekit-wagmiconnect"
 					target="_blank"
 					rel="noreferrer"
 				>
 					GitHub
 				</a>
-				<w3m-button class="space-x-20" />
+				<w3m-button class="" />
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

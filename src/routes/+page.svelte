@@ -13,7 +13,7 @@
 	import CustomForm from '../partials/CustomForm.svelte';
 </script>
 
-<div class="grid grid-cols-2 pt-20 md:pt-40">
+<div class="grid grid-cols-1 md:grid-cols-2 pt-20 md:pt-40">
 	<div class="grid-cols-1">
 		<div class="container h-full mx-auto flex justify-center items-center">
 			<div class="space-y-5 text-center flex flex-col items-center">
@@ -64,7 +64,7 @@
 					</p>
 				</div>
 				<figure>
-					<div class="grid grid-cols-2 gap-x-2">
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
 						<div class="flex justify-center space-x-2">
 							<a
 								class="btn variant-filled"
@@ -86,7 +86,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="grid grid-cols-3 gap-x-2 pt-6">
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-2 pt-6">
 						<div class="flex justify-center space-x-2">
 							<a
 								class="btn variant-filled"
@@ -130,9 +130,10 @@
 		</div>
 	</div>
 
-	{#if $account.isConnected}
-		<div class="grid grid-cols-3 gap-6 text-center">
-			<div class="col-span-3">
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center pt-20 md:pt-0 mx-4">
+		{#if $account.isConnected}
+			<h2 class="h2">Sign a message from the current wallet.</h2>
+			<div class="grid-span-1 md:col-span-3">
 				<Network />
 			</div>
 			<!-- Extra wallet metadata available when present
@@ -143,10 +144,10 @@
 			<div class="col-span-1"><SignMessage /></div>
 			<div class="col-span-1"><SignTypeData /></div>
 			<div class="col-span-1"><Transaction /></div>
-		</div>
-	{:else}
-		<CustomForm />
-	{/if}
+		{:else}
+			<div class="grid-span-1 md:col-span-3"><CustomForm /></div>
+		{/if}
+	</div>
 </div>
 
 <Toaster />
