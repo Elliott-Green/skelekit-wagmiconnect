@@ -18,9 +18,9 @@ This repository superceeds my previous frontend learning efforts with Sveltekit 
 
 <p align="center">
    <img src="./skelekit-wagmiconnect.png" alt="skelekit-wagmiconnect desktop" >
-   <img src="./skelekit-wagmiconnect-mobile.png" alt="skelekit-wagmiconnect mobile" width="320" >
-   <img src="./skelekit-wagmiconnect-mobile-network.png" alt="skelekit-wagmiconnect network"  width="320">
-   <img src="./skelekit-wagmiconnect-mobile-sign.png" alt="skelekit-wagmiconnect sign" width="320" >
+   <img src="./skelekit-wagmiconnect-mobile.png" alt="skelekit-wagmiconnect mobile" width="280" >
+   <img src="./skelekit-wagmiconnect-mobile-network.png" alt="skelekit-wagmiconnect network"  width="280">
+   <img src="./skelekit-wagmiconnect-mobile-sign.png" alt="skelekit-wagmiconnect sign" width="280" >
 </p>
 
 ## Virgins of the way
