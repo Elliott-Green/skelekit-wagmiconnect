@@ -8,13 +8,15 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Skelekit-WagmiConnect
+# skelekit-wagmiconnect
 
-A more opinionated, but barebones front end web3 template using some of my favorite technologies.
+A more opinionated, but barebones front end sveltekit web3 template using some of my favorite technologies, some might even say the best sveltekit-web3 template.
 
-SkeleKit-WagmiConnect is the lovechild of the 'create-skeleton-app' and the demo example provided by WalletConnect.
+skelekit-wagmiconnect is the lovechild of the ['create-skeleton-app' command](https://www.skeleton.dev/docs/get-started) and the [demo example provided by WalletConnect](https://evmtest.walletconnect.com/).
 
-This repository superceeds my previous frontend learning efforts with Sveltekit [here](https://github.com/Elliott-Green/SveltekitXSkeletonXEthers)
+Fun fact, [I asked WalletConnect to make the 'wagmiconnect' part of this example](https://github.com/WalletConnect/web-examples/issues/272), thanks WalletConnect, WAGMI!
+
+If you fork this repo and like it, maybe give it a star so other sveltekit devs can see it when they search 'web3 sveltekit'.
 
 <p align="center">
    <img src="./static/skelekit-wagmiconnect.png" alt="skelekit-wagmiconnect desktop" >
@@ -29,7 +31,7 @@ This repository superceeds my previous frontend learning efforts with Sveltekit 
    <img src="./static/skelekit-wagmiconnect-lighthouse.png" alt="skelekit-wagmiconnect desktop" >
 </p>
 
-## Virgins of the way
+## New to the skelekit-wagmiconnect stack?
 
 First time using Sveltekit? Check the [SvelteKit docs here](https://kit.svelte.dev/docs/). It's the only frontend framework which doesn't make me want to cry, maybe you'll like it too.
 
@@ -41,14 +43,17 @@ First time using Wagmi? Check out the [Wagmi docs here](https://wagmi.sh/core/ap
 
 ## Contributions + to-do-list
 
-I welcome any contributors, especially with the following areas
+I welcome any contributors, especially with the following areas. I'll probably add these over time.
 
 - page.svelte layout changes utilising skeleton.dev
-  - page layout changes where appropriate
-  - theme change with lightswitch possible?
+  - page layout constistency/best practice changes where appropriate
+  - walletconnect modal theme change with skeleton lightswitch possible?
+  - hook walletconnect modal colours to skeleton themes?
 - overriding walletconnects configuration to default, or skeleton theme'd like data
 - docker enhancements
 - improvements / bugfixes
+- pwa support
+  - would this be even a good idea since you'd need to be on the metamask app anyways? potentially on apps that only fetch without wallets?
 
 ## Commands
 
@@ -136,6 +141,8 @@ Distributed under the MIT License. See LICENSE.txt for more information.
 Elliott Green - [@cryptonines](https://twitter.com/cryptonines)
 
 Project Link: [https://github.com/Elliott-Green/skelekit-wagmiconnect](https://github.com/Elliott-Green/skelekit-wagmiconnect)
+
+This repository superceeds my previous opensource Sveltekit web3 UI learning efforts [archived here](https://github.com/Elliott-Green/SveltekitXSkeletonXEthers).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
