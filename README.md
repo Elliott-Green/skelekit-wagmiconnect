@@ -21,9 +21,9 @@ This repository superceeds my previous frontend learning efforts with Sveltekit 
 </p>
 
 <p align="center">
-   <img src="./static/skelekit-wagmiconnect-mobile.png" alt="skelekit-wagmiconnect mobile" width="230" >
-   <img src="./static/skelekit-wagmiconnect-mobile-network.png" alt="skelekit-wagmiconnect network"  width="230">
-   <img src="./static/skelekit-wagmiconnect-mobile-sign.png" alt="skelekit-wagmiconnect sign" width="230" >
+   <img src="./static/skelekit-wagmiconnect-mobile.png" alt="skelekit-wagmiconnect mobile" width="250" >
+   <img src="./static/skelekit-wagmiconnect-mobile-network.png" alt="skelekit-wagmiconnect network"  width="250">
+   <img src="./static/skelekit-wagmiconnect-mobile-sign.png" alt="skelekit-wagmiconnect sign" width="250" >
 </p>
 <p align="center">
    <img src="./static/skelekit-wagmiconnect-lighthouse.png" alt="skelekit-wagmiconnect desktop" >
@@ -38,6 +38,17 @@ First time using Skeleton/Tailwind? Check the [Tailwind CSS docs here](https://t
 First time using WalletConnect? Check the [WalletConnect docs here](https://docs.walletconnect.com/web3modal/javascript/actions). Support multiple different wallet types across multiple different networks with mobile support out of the box.
 
 First time using Wagmi? Check out the [Wagmi docs here](https://wagmi.sh/core/api/actions). You get your icecream in two main flavours here, WalletConnect comes with the wagmi flavour, so we inherit using it over 'ethers' because it's easier - feel free to make a fork with this enhancement!
+
+## Contributions + to-do-list
+
+I welcome any contributors, especially with the following areas
+
+- page.svelte layout changes utilising skeleton.dev
+  - page layout changes where appropriate
+  - theme change with lightswitch possible?
+- overriding walletconnects configuration to default, or skeleton theme'd like data
+- docker enhancements
+- improvements / bugfixes
 
 ## Commands
 
@@ -101,7 +112,7 @@ Using vercel you can specifiy if envs are inserted into the UI or through a .env
 
 This template comes equipped with Svelte-SEO to make your life easier.
 
-Just override on `+page`'s that you want custom SEO for.
+It's available on all pages at `+layout` and override on `+page`'s that you want custom OG SEO data for.
 
 ```bash
 https://www.opengraph.xyz/url/https%3A%2F%2Fskelekit-wagmiconnect.vercel.app
