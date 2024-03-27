@@ -56,31 +56,23 @@
 				toast.success('Message signed successfully');
 			} else {
 				toast.error('The signature was rejected');
-				signature = '_ signTypeData_v4';
+				signature = '';
 			}
 		} catch (error) {
 			toast.error((error as Error).message);
-			signature = '_ signTypeData_v4';
+			signature = '';
 		} finally {
 			label = 'Sign Type Data';
 		}
 	}
 </script>
 
-<div class="card">
-	<div>
-		{signature ?? '_ signTypeData_v4'}
-		<div class="btn variant-ghost-primary" on:click={handleSign}>{label}</div>
+<div class="card py-2">
+	<div class="space-y-4">
+		<h3 class="text-bold text-md">_eth_signTypeData</h3>
+		<p class="text-left text-sm">
+			Result: <span class="text-sm">{signature ?? ''}</span>
+		</p>
+		<div class="btn variant-ghost-primary w-full" on:click={handleSign}>{label}</div>
 	</div>
 </div>
-
-<style>
-	div {
-		width: 230px;
-		word-wrap: break-word;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 100%;
-	}
-</style>

@@ -11,6 +11,14 @@
 
 <div class="container h-full justify-center items-center space-y-10 text-center flex flex-col">
 	<h2 class="h2">Add a Custom Wallet to Web3Modal.</h2>
+	<div class="">
+		<p>Try signing into a wallet to access:</p>
+		<div class="grid grid-cols-3 space-x-10">
+			<p><code class="code">/_personal_sign</code></p>
+			<p><code class="code">/_signTypeData_v4</code></p>
+			<p><code class="code">/_eth_sendTransaction</code></p>
+		</div>
+	</div>
 	<form
 		on:submit|preventDefault={handleSubmit}
 		class="grid grid-cols-2 justify-center max-w-lg gap-6 text-sm pt-4"
@@ -21,7 +29,7 @@
 				name="id"
 				type="text"
 				bind:value={$customWallet.id}
-				class="rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
+				class="text-black rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full">
@@ -30,7 +38,7 @@
 				name="name"
 				type="text"
 				bind:value={$customWallet.name}
-				class="rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
+				class="text-black rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full">
@@ -39,7 +47,7 @@
 				name="homepage"
 				type="url"
 				bind:value={$customWallet.homepage}
-				class="rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
+				class="text-black rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full">
@@ -48,7 +56,7 @@
 				name="image_url"
 				type="url"
 				bind:value={$customWallet.image_url}
-				class="rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
+				class="text-black rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full">
@@ -57,7 +65,7 @@
 				name="mobile_link"
 				type="text"
 				bind:value={$customWallet.mobile_link}
-				class="rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
+				class="text-black rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full">
@@ -66,7 +74,7 @@
 				name="desktop_link"
 				type="text"
 				bind:value={$customWallet.desktop_link}
-				class="rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
+				class="text-black rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full">
@@ -75,7 +83,7 @@
 				name="webapp_link"
 				type="text"
 				bind:value={$customWallet.webapp_link}
-				class="rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
+				class="text-black rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full">
@@ -84,7 +92,7 @@
 				name="app_store"
 				type="url"
 				bind:value={$customWallet.app_store}
-				class="rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
+				class="text-black rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full">
@@ -93,7 +101,7 @@
 				name="play_store"
 				type="url"
 				bind:value={$customWallet.play_store}
-				class="rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
+				class="text-black rounded-md outline-blue bg-gray-200 px-4 py-2 transition duration-300 focus:outline-blue focus:bg-white focus:ring focus:ring-blue-400 focus:border-transparent"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full">

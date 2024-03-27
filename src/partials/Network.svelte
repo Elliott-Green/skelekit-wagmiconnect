@@ -3,31 +3,26 @@
 	import { chainId, account } from '$lib/web3modal';
 </script>
 
-{#if $account.address}
-	<div class="card">
-		<span>
-			<span id="title">Chain ID:</span>
-			{$chainId}
-		</span>
-		{#if $account.chain}
-			<span>
-				<span id="title">Network:</span>
-				{$account.chain?.name}
-			</span>
-			<span>
-				<span id="title">Decimals:</span>
-				{$account.chain?.nativeCurrency.decimals}
-			</span>
-			<span>
-				<span id="title">Currency:</span>
-				{$account.chain?.nativeCurrency.name}
-			</span>
-		{/if}
-	</div>
-{/if}
+<div class="w-full">
+	{#if $account.address}
+		<div class="card space-x-20 py-4">
+			{#if $account.chain}
+				<div class="grid grid-cols-2 text-center">
+					<div>Chain ID: <span class="font-bold"> {$chainId}</span></div>
 
-<style>
-	#title {
-		font-weight: 500;
-	}
-</style>
+					<div>Chain Name: <span class="font-bold"> {$account.chain?.name}</span></div>
+					<div>
+						Chain Native Currency: <span class="font-bold">
+							{$account.chain?.nativeCurrency.decimals}</span
+						>
+					</div>
+					<div>
+						Chain Native Decimals: <span class="font-bold">
+							{$account.chain?.nativeCurrency.name}</span
+						>
+					</div>
+				</div>
+			{/if}
+		</div>
+	{/if}
+</div>

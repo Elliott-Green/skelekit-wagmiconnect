@@ -32,9 +32,9 @@ if (typeof window !== 'undefined') {
 const customWallets = storedCustomWallet ? [JSON.parse(storedCustomWallet)] : undefined;
 
 const metadata = {
-	name: 'Web3Modal',
-	description: 'Web3Modal Example',
-	url: 'https://web3modal.com',
+	name: 'skelekit-wagmiconnect',
+	description: 'skelekit-wagmiconnect example',
+	url: 'https://skelekit-wagmiconnect.vercel.app/',
 	icons: ['https://avatars.githubusercontent.com/u/37784886']
 };
 
@@ -61,7 +61,7 @@ export const wagmiConfig = defaultWagmiConfig({
 	projectId,
 	metadata,
 	enableCoinbase: false,
-	enableInjected: false
+	enableInjected: true
 });
 
 reconnect(wagmiConfig);
@@ -69,9 +69,18 @@ reconnect(wagmiConfig);
 createWeb3Modal({
 	wagmiConfig,
 	projectId,
-	themeMode: 'dark',
+	themeMode: 'dark', // light/dark mode
+	themeVariables: {
+		//--w3m-font-family
+		'--w3m-accent': '#6B7280', // Button colour surface-500
+		'--w3m-color-mix': '#1e3a8a', // Modal colour mix primary-300
+		'--w3m-color-mix-strength': 50, // Strength of colour
+		'--w3m-font-size-master': '8px', // Font size
+		'--w3m-border-radius-master': '999px' // border rounding
+		// --w3m-z-index
+	},
 	featuredWalletIds: [],
-	enableAnalytics: true,
+	enableAnalytics: false,
 	customWallets
 });
 

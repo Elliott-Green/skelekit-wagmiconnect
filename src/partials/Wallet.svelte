@@ -22,13 +22,13 @@
 	});
 </script>
 
-{#if $account.isConnected && metadata}
+{#if $account.isConnected}
 	<div class="card">
-		<span>
+		<p>
 			{#if metadata.name}
 				<span id="title">Wallet:</span> {metadata.name}
 			{/if}
-		</span>
+		</p>
 		{#if metadata.description}
 			<span>
 				<span id="title">description:</span>
@@ -49,7 +49,7 @@
 		{/if}
 	</div>
 	{#if chains}
-		<div class="card" overflow>
+		<div class="card">
 			<span id="title">Approved Chains:</span>
 			{#each chains as chain}
 				<div>{chain}</div>
@@ -57,7 +57,7 @@
 		</div>
 	{/if}
 	{#if events}
-		<div class="card" overflow>
+		<div class="card">
 			<span id="title">Approved Events:</span>
 			{#each events as event}
 				<div>{event}</div>
@@ -65,7 +65,7 @@
 		</div>
 	{/if}
 	{#if methods}
-		<div class="card" overflow>
+		<div class="card">
 			<span id="title">Approved Methods:</span>
 			{#each methods as method}
 				<div>{method}</div>

@@ -31,21 +31,21 @@
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
+					href="https://twitter.com/cryptonines"
 					target="_blank"
 					rel="noreferrer"
 				>
-					Devs Twitter
+					Twitter
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/skeletonlabs/skeleton"
+					href="https://github.com/Elliott-Green/skelekit-wagmiconnect"
 					target="_blank"
 					rel="noreferrer"
 				>
 					GitHub
 				</a>
-				<w3m-button />
+				<w3m-button class="space-x-20" />
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>

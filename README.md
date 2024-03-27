@@ -33,6 +33,11 @@ First time using Wagmi? Check out the [Wagmi docs here](https://wagmi.sh/core/ap
 ### Developing
 
 ```bash
+## clone
+mkdir skelekit-wagmiconnect
+cd skelekit-wagmiconnect
+git clone https://github.com/Elliott-Green/skelekit-wagmiconnect.git
+
 ## install dependancies
 pnpm install
 

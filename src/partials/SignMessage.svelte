@@ -32,20 +32,12 @@
 	}
 </script>
 
-<div class="card">
-	<div>
-		{signature ?? '_ personal_sign'}
-		<button class="btn variant-primary" on:click={handleSign}>{label}</button>
+<div class="card py-2">
+	<div class="space-y-4">
+		<h3 class="text-bold text-md">_eth_signMessage</h3>
+		<p class="text-left text-sm">
+			Result: <span class="text-sm"> {signature ?? ''} </span>
+		</p>
+		<button class="btn variant-ghost-primary w-full" on:click={handleSign}>{label}</button>
 	</div>
 </div>
-
-<style>
-	div {
-		width: 220px;
-		word-wrap: break-word;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 100%;
-	}
-</style>
