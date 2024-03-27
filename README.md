@@ -17,10 +17,10 @@ SkeleKit-WagmiConnect is the lovechild of the 'create-skeleton-app' and the demo
 This repository superceeds my previous frontend learning efforts with Sveltekit [here](https://github.com/Elliott-Green/SveltekitXSkeletonXEthers)
 
 <p align="center">
-   <img src="./skelekit-wagmiconnect.png" alt="skelekit-wagmiconnect desktop" >
-   <img src="./skelekit-wagmiconnect-mobile.png" alt="skelekit-wagmiconnect mobile" width="280" >
-   <img src="./skelekit-wagmiconnect-mobile-network.png" alt="skelekit-wagmiconnect network"  width="280">
-   <img src="./skelekit-wagmiconnect-mobile-sign.png" alt="skelekit-wagmiconnect sign" width="280" >
+   <img src="./static/skelekit-wagmiconnect.png" alt="skelekit-wagmiconnect desktop" >
+   <img src="./static/skelekit-wagmiconnect-mobile.png" alt="skelekit-wagmiconnect mobile" width="280" >
+   <img src="./static/skelekit-wagmiconnect-mobile-network.png" alt="skelekit-wagmiconnect network"  width="280">
+   <img src="./static/skelekit-wagmiconnect-mobile-sign.png" alt="skelekit-wagmiconnect sign" width="280" >
 </p>
 
 ## Virgins of the way
