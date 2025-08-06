@@ -10,6 +10,8 @@
 
 # skelekit-wagmiconnect
 
+THIS REPO HAS BEEN DEPRECIATED IN FAVOUR OF THE LATEST VERSIONS OF SVELTEKIT, SKELETON, TAILWIND ETC, FIND IT [HERE](https://github.com/Elliott-Green/sveltekit-reown-ethers)
+
 A more opinionated, but barebones front end sveltekit web3 template using some of my favorite technologies, some might even say the best sveltekit-web3 template.
 
 skelekit-wagmiconnect is the lovechild of the ['create-skeleton-app' command](https://www.skeleton.dev/docs/get-started) and the [demo example provided by WalletConnect](https://evmtest.walletconnect.com/).
